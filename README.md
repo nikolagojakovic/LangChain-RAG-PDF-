@@ -1,8 +1,9 @@
-This project is a Retrieval-Augmented Generation (RAG) pipeline for querying information from PDF documents using LangChain, ChromaDB, and Streamlit. It enables users to upload and index PDF files, generate vector embeddings (locally with Ollama or via AWS Bedrock), and interactively query the indexed content through a simple web UI.
+
+**This project implements a Retrieval-Augmented Generation (RAG) pipeline for querying information from PDF documents using LangChain, ChromaDB, and Streamlit. It enables users to upload and index PDF files, generate vector embeddings (locally with Ollama or via AWS Bedrock), and interactively query the indexed content through a simple web UI.**
 
 Key Components
 PDF Ingestion:
-PDF files placed in the data directory are loaded and split into text chunks using LangChain’s text splitters.
+**PDF files placed in the data directory are loaded and split into text chunks using LangChain’s text splitters**
 
 Embeddings:
 Each text chunk is converted into a vector embedding using either:
@@ -12,8 +13,8 @@ AWS Bedrock (cloud-based, requires AWS credentials and incurs cost).
 Vector Store:
 Embeddings and metadata are stored in a local ChromaDB instance for efficient similarity search.
 
-Database Population:
-The populate_db.py script processes PDFs, generates embeddings, and populates the Chroma database. Use --reset to clear and rebuild the database.
+**Database Population:
+The populate_db.py script processes PDFs, generates embeddings, and populates the Chroma database. Use --reset to clear and rebuild the database.**
 
 Interactive UI:
 The ui.py Streamlit app provides a web interface for querying the database. It displays the most relevant answer and allows users to view additional relevant results.
