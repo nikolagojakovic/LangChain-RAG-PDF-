@@ -20,7 +20,7 @@ Interactive UI:
 The ui.py Streamlit app provides a web interface for querying the database. It displays the most relevant answer and allows users to view additional relevant results.
 
 Docker Support:
-The project includes a Dockerfile for easy containerization and deployment.
+The project includes a Dockerfile for easy containerization and deployment. (soon)
 
 Typical Workflow
 Start Ollama (if using local embeddings) and pull the required model.
